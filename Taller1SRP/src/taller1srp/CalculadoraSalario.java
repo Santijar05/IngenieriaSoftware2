@@ -25,7 +25,7 @@ public class CalculadoraSalario {
         // Lógica del cálculo del salario del usuario
         int salario;
         salario = horas * 15;
-        System.out.println("Salario del Usuario: "+salario);
+        System.out.println("Salario del Usuario: $"+salario);
         return salario;
         
     }

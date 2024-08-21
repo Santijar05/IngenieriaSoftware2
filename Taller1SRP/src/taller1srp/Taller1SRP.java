@@ -19,7 +19,7 @@ public class Taller1SRP {
         // TODO code application logic here
         Usuario u = new Usuario("Chipi Chipi", "chipic@example.com", "Ch1p1", 2000, 38);
         Usuario us = new Usuario("Lola Mento", "lmento@example.com", "1o1a", 2000, 43);
-        ServicioDeCorreos s = new ServicioDeCorreos();
+        GestorCorreos s = new GestorCorreos();
         CalculadoraSalario c = new CalculadoraSalario();
         ValidadorContraseña v = new ValidadorContraseña();
         

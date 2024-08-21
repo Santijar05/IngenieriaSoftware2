@@ -8,9 +8,9 @@ package taller1srp;
  * Esta clase define objetos que se encargan de hacer envio de correos de un usuario a otro.
  * @author Santiago Jimenez
  */
-public class ServicioDeCorreos {
+public class GestorCorreos {
 
-    public ServicioDeCorreos() {
+    public GestorCorreos() {
     }
     
     
