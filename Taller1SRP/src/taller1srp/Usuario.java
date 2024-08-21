@@ -5,22 +5,41 @@
 package taller1srp;
 
 /**
- *
- * @author santi
+ * Esta clase define objetos que contienen información básica de un usuario como nombre, email, contraseña un salario y un # de horas trabajadas. 
+ * @author Santiago Jimenez 
  */
 public class Usuario {
     private String nombre;
     private String email;
     private String contraseña;
-    private float salario = 0;
+    private float salario;
+    private int horasTrabaj;
 
-    public Usuario(String nombre, String email, String contraseña, float salario) {
+    /**
+     * Constructor parametrizado para los usuarios
+     * @param nombre Nombre del usuario
+     * @param email Correo con el que se va a identificar al usuario 
+     * @param contraseña Clave de seguridad del usuario.
+     * @param salario Salario del usuario en dólares.
+     * @param horasTrabaj Número de horas trabajadas por semana.
+     */
+    public Usuario(String nombre, String email, String contraseña, float salario, int horasTrabaj) {
         this.nombre = nombre;
         this.email = email;
         this.contraseña = contraseña;
         this.salario = salario;
-    }
-    
+        this.horasTrabaj = horasTrabaj;
+    };
+
+    /**
+     * Constructor para los usuarios
+     */
+    public Usuario() {
+    };
+
+    /**
+     * Obtiene los valores de los atributos del usuario
+     */
     public void ObtenerInfoUsuario(){
         if(this.nombre != null)
         System.out.println("Nombre:"+this.nombre);
@@ -86,6 +105,20 @@ public class Usuario {
      */
     public void setSalario(float salario) {
         this.salario = salario;
+    }
+
+    /**
+     * @return the horasTrabaj
+     */
+    public int getHorasTrabaj() {
+        return horasTrabaj;
+    }
+
+    /**
+     * @param horasTrabaj the horasTrabaj to set
+     */
+    public void setHorasTrabaj(int horasTrabaj) {
+        this.horasTrabaj = horasTrabaj;
     }
     
 }

@@ -4,31 +4,30 @@
  */
 package taller1srp;
 
+import javax.swing.JOptionPane;
+
 /**
- *
- * @author santi
+ * Funcionalidad de la refactorización de la clase Usuario luego de aplicar el SRP
+ * @author Santiago Jimenez
  */
 public class Taller1SRP {
-    
-    private Usuario u;
-    private ServicioDeCorreos s;
-    private CalculadoraSalario c;
-    private ValidadorContraseñas v;
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Usuario u = new Usuario("Chipi Chipi", "chipic@example.com", "Ch1p1", 2000);
-        Usuario us = new Usuario("Lola Mento", "lmento@example.com", "1o1a", 2000);
+        Usuario u = new Usuario("Chipi Chipi", "chipic@example.com", "Ch1p1", 2000, 38);
+        Usuario us = new Usuario("Lola Mento", "lmento@example.com", "1o1a", 2000, 43);
         ServicioDeCorreos s = new ServicioDeCorreos();
         CalculadoraSalario c = new CalculadoraSalario();
-        ValidadorContraseñas v = new ValidadorContraseñas();
+        ValidadorContraseña v = new ValidadorContraseña();
         
         u.ObtenerInfoUsuario();
         s.EnviarCorreo(u.getEmail(), us.getEmail(), "¡Viva la Libertad CARAJO!");
-        v.ValidarContraseñas(us.getContraseña(), "1o1a");
+        String entrada = JOptionPane.showInputDialog("Ingrese la contraseña: ");
+        v.ValidarContraseña(u.getContraseña(), entrada);
+        c.CalcularSalario(us.getHorasTrabaj());
     }
     
 }

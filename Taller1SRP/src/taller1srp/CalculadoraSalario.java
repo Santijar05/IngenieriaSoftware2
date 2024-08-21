@@ -5,14 +5,28 @@
 package taller1srp;
 
 /**
- *
- * @author santi
+ * Esta clase define objetos que se encargan de calcular un salario a partir de una cantidad de horas trabajadas.
+ * @author Santiago Jimenez
  */
 public class CalculadoraSalario {
+
+    /**
+     * Constructor de la Calculadora de salarios.
+     */
+    public CalculadoraSalario() {
+    }
     
-    public int CalcularSalario(){
+    /**
+     * Metodo que retorna en un entero el salario en dólares segun unas horas trabajadas.
+     * @param horas Horas trabajadas.
+     * @return
+     */
+    public int CalcularSalario(int horas){
         // Lógica del cálculo del salario del usuario
-        return 0;
+        int salario;
+        salario = horas * 15;
+        System.out.println("Salario del Usuario: "+salario);
+        return salario;
         
     }
 }
