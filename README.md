@@ -53,4 +53,4 @@ Esta refactorización mejora la mantenibilidad y escalabilidad del código al as
 
 ## Comentarios en el Código
 
-Se han agregado comentarios en el código para explicar decisiones específicas de diseño y refactorización. Te recomendamos revisar estos comentarios para un entendimiento más profundo de las implementaciones.
+Se han agregado comentarios en el código para explicar las clases y sus principales métodos. Se recomienda revisar estos comentarios para un entendimiento más profundo de las implementaciones.
