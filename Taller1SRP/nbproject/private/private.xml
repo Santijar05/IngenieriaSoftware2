@@ -5,8 +5,8 @@
         <group>
             <file>file:/C:/Users/santi/Documents/IngSoft2/Taller1SRP/src/taller1srp/Taller1SRP.java</file>
             <file>file:/C:/Users/santi/Documents/IngSoft2/Taller1SRP/src/taller1srp/Usuario.java</file>
-            <file>file:/C:/Users/santi/Documents/IngSoft2/Taller1SRP/src/taller1srp/ServicioDeCorreos.java</file>
-            <file>file:/C:/Users/santi/Documents/IngSoft2/Taller1SRP/src/taller1srp/ValidadorContraseñas.java</file>
+            <file>file:/C:/Users/santi/Documents/IngSoft2/Taller1SRP/src/taller1srp/ValidadorContraseña.java</file>
+            <file>file:/C:/Users/santi/Documents/IngSoft2/Taller1SRP/src/taller1srp/GestorCorreos.java</file>
             <file>file:/C:/Users/santi/Documents/IngSoft2/Taller1SRP/src/taller1srp/CalculadoraSalario.java</file>
         </group>
     </open-files>
