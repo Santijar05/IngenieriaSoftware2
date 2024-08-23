@@ -62,7 +62,7 @@ Se han refactorizado las clases `Cliente` y `Factura`, dividiendo sus responsabi
 
 ## Ejecución del Proyecto
 
-Para ejecutar el código refactorizado, ejecuta la clase `SRP2`. En esta clase se demuestra la funcionalidad de las nuevas clases en conjunto.
+Para ejecutar el código refactorizado, ejecuta la clase Main `SRP2`. En esta clase se demuestra la funcionalidad de las nuevas clases en conjunto.
 
 ## Conclusión
 
