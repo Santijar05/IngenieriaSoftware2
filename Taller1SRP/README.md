@@ -51,6 +51,3 @@ Esta refactorización mejora la mantenibilidad y escalabilidad del código al as
 1. Asegúrate de tener configurado tu entorno de desarrollo.
 2. Ejecuta el archivo Taller1SRP el cual corresponde a la clase Main del proyecto.
 
-## Comentarios en el Código
-
-Se han agregado comentarios en el código para explicar las clases y sus principales métodos. Se recomienda revisar estos comentarios para un entendimiento más profundo de las implementaciones.
