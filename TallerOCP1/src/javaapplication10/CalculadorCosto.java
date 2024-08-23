@@ -17,7 +17,6 @@ public class CalculadorCosto {
     /**
      * Calcula el costo del envío utilizando el método calcularCosto() 
      * de la instancia de Envio proporcionada.
-     *
      * @param envio la instancia de Envio para la cual se calculará el costo
      * @return el costo calculado del envío
      */

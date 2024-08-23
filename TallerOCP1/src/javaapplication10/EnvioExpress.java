@@ -13,7 +13,6 @@ public class EnvioExpress extends Envio{
 
     /**
      * Construye una instancia de EnvioExpress con el peso, la distancia, el origen y el destino especificados.
-     *
      * @param peso     el peso del paquete
      * @param distancia la distancia del envío
      * @param origen   la ubicación de origen del envío
@@ -24,9 +23,7 @@ public class EnvioExpress extends Envio{
     }
 
     /**
-     * 
      * Calcula el costo del envío express.
-     *
      * @return el costo calculado del envío estándar
      */
     @Override

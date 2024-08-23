@@ -19,7 +19,6 @@ public abstract class Envio {
 
     /**
      * Construye una instancia de Envio con el peso, la distancia, el origen y el destino especificados.
-     *
      * @param peso     el peso del paquete
      * @param distancia la distancia del envío
      * @param origen   la ubicación de origen del envío
@@ -34,7 +33,6 @@ public abstract class Envio {
     
     /**
      * Calcula el costo del envío. Este método debe ser implementado por las subclases.
-     *
      * @return el costo calculado del envío
      */
     public abstract double calcularCosto();

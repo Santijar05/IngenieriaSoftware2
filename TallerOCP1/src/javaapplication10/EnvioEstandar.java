@@ -13,7 +13,6 @@ public class EnvioEstandar extends Envio{
 
     /**
      * Construye una instancia de EnvioEstandar con el peso, la distancia, el origen y el destino especificados.
-     *
      * @param peso     el peso del paquete
      * @param distancia la distancia del envío
      * @param origen   la ubicación de origen del envío
@@ -23,9 +22,7 @@ public class EnvioEstandar extends Envio{
         super(peso, distancia, origen, destino);
     }
     /**
-     * 
      * Calcula el costo del envío estándar.
-     *
      * @return el costo calculado del envío estándar
      */
     @Override
