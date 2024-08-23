@@ -6,7 +6,7 @@ package javaapplication10;
 
 /**
  *
- * @author santi
+ * @author Santiago Jimenez
  */
 public class TallerOCP1 {
 

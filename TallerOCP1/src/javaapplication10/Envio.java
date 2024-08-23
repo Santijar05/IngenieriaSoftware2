@@ -5,15 +5,26 @@
 package javaapplication10;
 
 /**
- *
- * @author santi
+ * La clase Envio es una representación abstracta de un servicio de envío o entrega.
+ * Proporciona los atributos y métodos fundamentales necesarios para calcular los costos de envío
+ * basados en el peso, la distancia, el origen y el destino. Esta clase sirve como base para 
+ * tipos específicos de métodos de envío que extenderán su funcionalidad.
+ * @author Santiago Jimenez
  */
 public abstract class Envio {
-    protected double peso;
-    protected double distancia;
-    protected String origen;
-    protected String destino;
+    protected double peso;       // Peso del paquete
+    protected double distancia;  // Distancia del envío
+    protected String origen;     // Origen del envío
+    protected String destino;    // Destino del envío
 
+    /**
+     * Construye una instancia de Envio con el peso, la distancia, el origen y el destino especificados.
+     *
+     * @param peso     el peso del paquete
+     * @param distancia la distancia del envío
+     * @param origen   la ubicación de origen del envío
+     * @param destino  la ubicación de destino del envío
+     */
     public Envio(double peso, double distancia, String origen, String destino) {
         this.peso = peso;
         this.distancia = distancia;
@@ -21,6 +32,11 @@ public abstract class Envio {
         this.destino = destino;
     }
     
+    /**
+     * Calcula el costo del envío. Este método debe ser implementado por las subclases.
+     *
+     * @return el costo calculado del envío
+     */
     public abstract double calcularCosto();
 
     /**
