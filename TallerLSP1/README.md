@@ -60,7 +60,7 @@ public abstract class Producto {
         this.cantidad = cantidad;
     }
 
-    public abstract double calcularCostoTotal();
+    public abstract double calcularCosto();
 }
 ```
 ## Aplicación del Principio de Sustitución de Liskov (LSP)
