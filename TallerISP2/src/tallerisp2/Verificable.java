@@ -9,5 +9,5 @@ package tallerisp2;
  * @author santi
  */
 public interface Verificable {
-    
+    void verificarContenidoPegriloso();
 }

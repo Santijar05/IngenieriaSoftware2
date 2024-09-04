@@ -11,9 +11,16 @@ package tallerisp2;
 public class PaquetePequeño extends Paquete implements CalculablePequeño{
     private double valorDeclarado;
 
+    public PaquetePequeño(double valorDeclarado, double peso, String dimensiones) {
+        super(peso, dimensiones);
+        this.valorDeclarado = valorDeclarado;
+    }
+    
+    
+
     @Override
-    public double calcularCostoEnvioPequeño() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void calcularCostoEnvioPequeño() {
+        System.out.println("El costo de paquete pequeño es: $20");
     }
     
 }

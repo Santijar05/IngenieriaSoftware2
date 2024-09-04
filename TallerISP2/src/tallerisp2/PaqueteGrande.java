@@ -8,7 +8,19 @@ package tallerisp2;
  *
  * @author santi
  */
-public class PaqueteGrande {
+public class PaqueteGrande extends Paquete implements CalculableGrande{
     private double volumen;
     private String medioTransporte;
+
+
+    public PaqueteGrande(double volumen, String medioTransporte, double peso, String dimensiones) {
+        super(peso, dimensiones);
+        this.volumen = volumen;
+        this.medioTransporte = medioTransporte;
+    }
+
+    @Override
+    public void calcularCostoEnvioGrande() {
+        System.out.println("El costo de envio de un paquete grande es: $78");
+    }
 }

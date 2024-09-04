@@ -8,6 +8,26 @@ package tallerisp2;
  *
  * @author santi
  */
-public class PaquetePegriloso {
+public class PaquetePegriloso extends Paquete implements Asegurable, Verificable{
+    
+    private String etiquetasPeligro;
+    private Boolean embalajeEspecial;
+
+    public PaquetePegriloso(String etiquetasPeligro, Boolean embalajeEspecial, double peso, String dimensiones) {
+        super(peso, dimensiones);
+        this.etiquetasPeligro = etiquetasPeligro;
+        this.embalajeEspecial = embalajeEspecial;
+    }
+
+    @Override
+    public void asegurarPaquetePegriloso() {
+        System.out.println("Paquete peligroso asegurado");
+    }
+
+    @Override
+    public void verificarContenidoPegriloso() {
+        System.out.println("Se verificó el contenido del paquete peligroso");
+    }
+    
     
 }
