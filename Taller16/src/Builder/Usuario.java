@@ -16,22 +16,22 @@ public class Usuario {
     private String correo;
     private Set<String> intereses;
 
-    Usuario(String nombre, int edad, String correo, Set<String> intereses) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.correo = correo;
-        this.intereses = intereses;
+    Usuario(Builder builder) {
+        this.nombre = builder.nombre;
+        this.edad = builder.edad;
+        this.correo = builder.correo;
+        this.intereses = builder.intereses;
     }
-
-    public void mostrarUsuario() {
-        System.out.println("Usuario{" +
+    
+    @Override
+    public String toString() {
+        return "Usuario{" +
                 "nombre='" + nombre + '\'' +
                 ", edad=" + edad +
                 ", correo='" + correo + '\'' +
                 ", intereses=" + intereses +
-                '}');
+                '}';
     }
-
     
     public String getNombre() {
         return nombre;

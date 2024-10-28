@@ -4,10 +4,10 @@
  */
 package taller16;
 
-import Builder.IUsuarioBuilderImpl;
+import Builder.Builder;
 import Builder.Usuario;
 import Prototype.Producto;
-import Builder.UsuarioDirector;
+
 /**
  *
  * @author santi
@@ -31,10 +31,24 @@ public class Taller16 {
         
         // Builder
         
-        UsuarioDirector director = new UsuarioDirector();
-        Usuario usuario = director.constructUsuario(new IUsuarioBuilderImpl());
+        Usuario usuario1 = new Builder()
+                            .setNombre("Alice")
+                            .setEdad(30)
+                            .setCorreo("alice@example.com")
+                            .addInteres("Musica")
+                            .addInteres("Deportes")
+                            .build();
 
-        usuario.mostrarUsuario();
+        Usuario usuario2 = new Builder()
+                            .setNombre("Bob")
+                            .setEdad(25)
+                            .setCorreo("bob@example.com")
+                            .addInteres("Tecnología")
+                            .build();
+
+        System.out.println(usuario1);
+        System.out.println(usuario2);
+        
     }
     
 }
