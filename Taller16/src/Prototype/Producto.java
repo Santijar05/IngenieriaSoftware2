@@ -51,7 +51,7 @@ public class Producto implements IPrototype {
 
     @Override
     public Producto clone() {
-        return new Producto(this);
+        return new Producto(this.nombre, this.precio, this.categoria);
     }
 
     @Override

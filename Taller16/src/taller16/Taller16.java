@@ -22,13 +22,13 @@ public class Taller16 {
         // Prototype
         
         Producto productoOriginal = new Producto("Laptop", 1500.0, "Electrónica");
-        Producto productoClonado = productoOriginal.clone();
-
-        productoClonado.setNombre("Tablet");
-
+        Producto productoClonado = (Producto) productoOriginal.clone();
+        
         System.out.println("Producto Original: " + productoOriginal);
         System.out.println("Producto Clonado: " + productoClonado);
         
+        System.out.println("¿Son el mismo objeto? " + (productoOriginal == productoClonado));
+
         // Builder
         
         Usuario usuario1 = new Builder()
